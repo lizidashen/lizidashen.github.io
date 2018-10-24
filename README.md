@@ -11,12 +11,16 @@ Resume
 
 目前的版本，我只是把index的样式做了修改，还没有调整print版本，以后可能会加上
 
+#### 风格参考
+
+
+[点这里](https://lizidashen.github.io/)
+
 
 ---------
 
 Node version v7.7.0
 
-## 风格参考
 
 ## Configuration
 
