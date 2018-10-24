@@ -1,23 +1,21 @@
-Resume-it
+Resume
 ======
 
 一个灵活的数据模板分离的在线简历生成器。
-效果：https://xiao555.github.io/Resume/
-如果喜欢的话请给个star ^_^
 
-![](./resume.png)
+参考@[xiao555](https://xiao555.github.io/Resume/) 的，如果直接用的话只需要修改 `data.yaml` 里的数据即可。我主要做的是改成了我喜欢的配色和样式，另外把头像改成了图片模式，可以上传自己的头像图片。
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 Node version v7.7.0
 
 ## 风格参考
 
-[@DIYgod](http://html.love/)
-
 ## Configuration
 
 ### 使用默认模板
 
-这个默认模板是参考@[DIYgod](http://html.love/) 的，如果直接用的话只需要修改 `data.yaml` 里的数据即可。
+这个默认模板是参考@[xiao555](https://xiao555.github.io/Resume/) 的，如果直接用的话只需要修改 `data.yaml` 里的数据即可。
 
 1. YAML语法可以参考[这里](http://www.ruanyifeng.com/blog/2016/07/yaml.html)
 2. 如果需要用到Markdowm语法，请在字段开头加上 `!!md `，相应的前端模板要渲染md的话请加上safe过滤：`{{ example | safe}}`

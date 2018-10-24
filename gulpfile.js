@@ -8,6 +8,8 @@ const markdownItAttrs = require('markdown-it-attrs')
 const nib = require('nib')
 const $ = require('gulp-load-plugins')()
 const browserSync = require('browser-sync').create()
+const imagemin = require('gulp-imagemin');
+
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -76,13 +78,23 @@ gulp.task('html', () => {
     .pipe($.size())
 })
 
-gulp.task('default', ['scripts', 'styles', 'fonts','html'], () => {
+gulp.task('image',function(){
+    gulp.src('src/images/*.*')
+        .pipe(imagemin({progressive: true}))
+        .pipe(gulp.dest('dist/images'))
+})
+
+
+gulp.task('default', ['scripts', 'styles', 'fonts','html','image'], () => {
   if (isProd) return
   browserSync.init({
     server: "./dist"
   })
+
+
   gulp.watch(paths.scripts, ['scripts'])
   gulp.watch(paths.styles, ['styles'])
   gulp.watch(['template/*.html', 'data.yaml'], ['html'])
   gulp.watch(["dist/*.html", "dist/assets/*.*"]).on('change', browserSync.reload)
+  gulp.watch('src/images/*.*', ['image'])
 })

@@ -3,45 +3,60 @@
 <div class="container">
     <div class="sidebar">
         <div class="title">
-            {% include 'head.html' %}
-            <h1>{{ name }}的简历</h1>
+            <img src="images/head.png">
             <h2>{{ des }}</h2>
         </div>
         <ul class="side-info">
             <li class="someRight">
-                <dt><i class="fa fa-bookmark"></i>Basic info. 基本信息</dt>
-                <dd><span>个人信息:</span> {{ name }} / {{ gender }} / {{ age }} / {{ grade }}</dd>
+
+                <dt><i class="fa fa-tags"></i> Basic info. <span >基本信息</span></dt>
+                <dd><span>个人信息：</span> {{ name }} / {{ gender }} / {{ age }}</dd>
                 <dd><span>学校：</span>{{school}}</dd>
                 <dd><span>专业：</span>{{profession}}</dd>
+
                 {% if english_level %}
-                <dd><span>英语水平:</span> {{ english_level }}</dd>
+                <dd><span>英语水平：</span> {{ english_level }}</dd>
                 {% endif %}
                 {% if nickname %}
-                <dd><span>常用ID:</span> {{ nickname }}</dd>
+                <dd><span>常用ID：</span> {{ nickname }}</dd>
                 {% endif %}
                 {% if blog %}
-                <dd><span>Blog:</span> <a href="{{ blog }}" target="_blank">{{ blog }}</a></dd>
+                <dd><span>Blog：</span> <a href="{{ blog }}" target="_blank">{{ blog }}</a></dd>
                 {% endif %}
                 {% if github %}
-                <dd><span>GitHub:</span> <a href="{{ github }}" target="_blank">{{ github }}</a></dd>
+                <dd><span>GitHub：</span> <a href="{{ github }}" target="_blank">{{ github }}</a></dd>
                 {% endif %}
                 {% if online %}
-                <dd><span>在线简历:</span> <a href="{{ online }}" target="_blank">{{ online }}</a></dd>
+                <dd><span>在线简历：</span> <a href="{{ online }}" target="_blank">{{ online }}</a></dd>
                 {% endif %}
             </li>
             <li class="someRight">
-                <dt><i class="fa fa-bookmark"></i>Contact. 联系方式</dt>
+                <dt><i class="fa fa-phone"></i> Contact.  <span >联系方式</span></dt>
                 {% for item in contact %}
-                    <dd><i class="fa {{ item.icon }}"></i>{{ item.name }}: <a {% if item.name == 'Email' %}href="mailto:{{ item.value }}"{% endif %} target="_blank">{{ item.value }}</a></dd>
+                    <dd><i class="fa {{ item.icon }}"></i> {{ item.name }}：
+                        <a > {{ item.value }}</a>
+                    </dd>
                 {% endfor %}
             </li>
             <li class="someRight">
-                <dt><i class="fa fa-bookmark"></i>Application. 应聘岗位</dt>
-                <dd>{{ apply_to_position }}</dd>
+                <dt><i class="fa fa-bookmark"></i> Application.  <span >应聘岗位</span></dt>
+                <dd><span>岗位：</span> {{ apply_to_position }}</dd>
+                {% if hope_salary %}
+                <dd><span>期望薪资：</span> {{ hope_salary }}</dd>
+                {% endif %}
+                {% if hope_city %}
+                <dd><span>期望城市：</span> {{ hope_city }}</dd>
+                {% endif %}
+                {% if work_status %}
+                <dd><span>工作性质：</span> {{ work_status }}</dd>
+                {% endif %}
+                {% if to_work_time %}
+                <dd><span>到岗时间：</span> {{ to_work_time }}</dd>
+                {% endif %}
             </li>
             {% if honor %}
             <li class="someRight">
-                <dt><i class="fa fa-bookmark"></i>Honor. 奖项荣誉</dt>
+                <dt><i class="fa fa-bookmark"></i> Honor. 奖项荣誉</dt>
                 <dd>
                     {% for item in honor %}
                     <ul>
@@ -52,7 +67,7 @@
             </li>
             {% endif %}
             <li class="skill">
-                <dt><i class="fa fa-bookmark"></i>Tech. 主要技能点</dt>
+                <dt><i class="fa fa-code"></i> Tech.  <span >主要技能点</span></dt>
                 {% for item in tech %}
                 <dd>
                     <div class="skill-name">{{ item.name }}</div>
@@ -61,6 +76,18 @@
                     </div>
                 </dd>
                 {% endfor %}
+            </li>
+            <li class="someRight">
+                <dt><i class="fa fa-male"></i> Description. <span >自我介绍</span></dt>
+                <dd>
+                    <div>
+
+                        {% for item in description %}
+                        <p>{{ item.p }}</p>
+                        {% endfor %}
+
+                    </div>
+                </dd>
             </li>
         </ul>
         {% if intro %}
@@ -71,20 +98,28 @@
     </div>
     <div class="main">
         <ul class="main-info">
+            <li class="basic-info" style="margin-bottom: -30px">
+                <dt style="border-bottom: 0 solid red">
+                    <p style="font-size: 24px; margin-bottom: 10px">{{ title }}</p>
+                    <p style="font-size: 18px">Front-End Developer</p>
+                </dt>
+            </li>
             <li class="skill">
-                <dt><i class="fa fa-bookmark"></i>Skill. 技能清单</dt>
+                <dt><i class="fa fa-wrench"></i> Skill. <span style="font-size: 18px">技能清单</span></dt>
                 {% for item in skill %}
-                <ul class="exp">
+                <ul class="exp skill-item">
                   <li>{{ item.des |safe }}</li>
                 </ul>
                 {% endfor %}
             </li>
             <li class="experience">
-                <dt><i class="fa fa-bookmark"></i>Experience. 项目经验</dt>
+                <dt><i class="fa fa-book"></i> Work Experience. <span style="font-size: 18px">项目经验</span></dt>
                 {% for exp in experience %}
-                    {% if exp.section == '个人项目' %}
-                        <h2 class="exp-title">{{exp.section}}</h2>
-                        <ul class="exp">
+                    {% if exp.section %}
+                        <h3 class="exp-title">{{exp.section}}</h3>
+                        <h5 class="exp-title" style="margin-left: 10px">工作职责：{{exp.job}}</h5>
+
+                         <ul class="exp">
                             {% for item in exp.project %}
                             <li>
                                 <div class="circle"></div>
@@ -97,41 +132,35 @@
                                 {% endif %}
                                 </h4>
                                 <div class="clearfix">
-                                  {% if item.img %}<img src="{{ item.img }}">{% endif %}
-                                  {{ item.des |safe }}
+                                    {% if item.img %}<img src="{{ item.img }}">{% endif %}
+
+                                    {% if item.des %}
+                                    <h5>项目描述：</h5>
+
+                                        {{ item.des |safe }}
+
+                                    {% endif %}
+
+
+                                    {% if item.content %}
+                                    <h5>项目内容：</h5>
+
+                                        {% for i in item.content %}
+                                        <!--<div class="skill" style="margin-left: 20px">-->
+                                            <ul >
+                                                <li>{{ i.des |safe }}</li>
+                                            </ul>
+                                        <!--</div>-->
+                                        {% endfor %}
+
+                                    {% endif %}
+
                                 </div>
+
                             </li>
                             {% endfor %}
                         </ul>
-                    {% else %}
-                        <h2 class="exp-title">{{exp.section}}</h2>
-                        <ul class="exp">
-                            {% for item in exp.exper %}
-                            <li>
-                                <h4>{{ item.company }} <span>{{ item.date }}</span></h4>
-                                <p>{{ item.desc | safe}}</p>
-                                <ul>
-                                    {% for sub_item in item.project %}
-                                        <li>
-                                            <div class="circle"></div>
-                                            <h4>{{ sub_item.name }} {{ sub_item.date }}
-                                            {% if sub_item.website %}
-                                            <a href="{{ sub_item.website }}" target="_blank"><i class="fa fa-link"></i>Demo</a>
-                                            {% endif %}
-                                            {% if sub_item.source_code %}
-                                            <a href="{{ sub_item.source_code }}" target="_blank"><i class="fa fa-link"></i>SourceCode</a>
-                                            {% endif %}
-                                            </h4>
-                                            <div class="clearfix">
-                                              {% if sub_item.img %}<img src="{{ sub_item.img }}">{% endif %}
-                                              {{ sub_item.des |safe }}
-                                            </div>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            </li>
-                            {% endfor %}
-                        </ul>
+
                     {% endif %}
                 
                 {% endfor %}
