@@ -15,7 +15,7 @@ Resume
 #### 风格参考
 
 
-[点这里](https://lizidashen.github.io/)
+[点这里](https://xinguanhua.cn/)
 
 
 ---------
