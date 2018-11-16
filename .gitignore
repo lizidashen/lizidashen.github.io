@@ -2,10 +2,4 @@ node_modules
 npm-debug.log
 .DS_Store
 private
-.idea/dictionaries/
-.idea/markdown-navigator/
-.idea/modules.xml
-.idea/resume-it.iml
-.idea/workspace.xml
 package-lock.json
-private/
