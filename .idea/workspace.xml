@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0587e9a3-81b1-4286-bbe1-a27b4efe574f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/assets/scripts.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/assets/styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/fonts/fontawesome-webfont.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/images/head.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/print.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public.js" afterPath="$PROJECT_DIR$/public.js" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -131,12 +121,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="238">
-                    <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+                  <first_editor relative-caret-position="255">
+                    <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                     <folding />
                   </first_editor>
                   <second_editor>
@@ -146,7 +136,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="public.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="public.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="136">
@@ -187,11 +177,11 @@
         <option value="$PROJECT_DIR$/data.yaml" />
         <option value="$PROJECT_DIR$/src/styles/stylus/index.styl" />
         <option value="$PROJECT_DIR$/template/index.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -303,7 +293,7 @@
       <workItem from="1540358974451" duration="351000" />
       <workItem from="1540359364511" duration="84000" />
       <workItem from="1540359551477" duration="1112000" />
-      <workItem from="1542351072041" duration="1701000" />
+      <workItem from="1542351072041" duration="3086000" />
     </task>
     <task id="LOCAL-00001" summary="修改样式，修改gulp，把头像改为图片，修改readme">
       <created>1540348588499</created>
@@ -375,11 +365,25 @@
       <option name="project" value="LOCAL" />
       <updated>1542352493655</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="上传dist文件">
+      <created>1542352804807</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1542352804808</updated>
+    </task>
+    <task id="LOCAL-00012" summary="在线参考">
+      <created>1542361046965</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1542361046965</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37298000" />
+    <option name="totallyTimeSpent" value="38683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-280" width="1920" height="1080" extended-state="6" />
@@ -421,7 +425,9 @@
     <MESSAGE value="修改readme" />
     <MESSAGE value="修改readme，以及public发布设置" />
     <MESSAGE value="删除打包后的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除打包后的代码" />
+    <MESSAGE value="上传dist文件" />
+    <MESSAGE value="在线参考" />
+    <option name="LAST_COMMIT_MESSAGE" value="在线参考" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -575,19 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="238">
-            <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/stylus/index.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
@@ -668,14 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/images/head.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -694,6 +679,27 @@
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
