@@ -1,15 +1,15 @@
 ---
 update_time: '2017.08.06'
-name: 小明
+name: 辛冠华
 nickname:
 meta_content:
 keywords: sinf,前端,工作,简历
 age: 27岁
 gender: 男
-school: 大学
-profession: 城市规划
-hope_salary: 15k-20k
-hope_city: 北京
+school: 天津大学（985）（2009-2014）
+profession: 城市规划（五年制）
+hope_salary: 15k-25k
+hope_city: 北京/广州/深圳
 work_status: 全职
 to_work_time: 未离职,会尽快入职
 #english_level: CET-6
@@ -18,32 +18,30 @@ github:
 website:
 online:
 print:
-title: 小 明 - 前 端 工 程 师
 apply_to_position: 前端工程师
 description:
   -
-   p: 我有较强的学习能力，独立解决工程问题的能力和较强的团队合作能力。
+   p: 自学前端以及一年多的前端开发经历，锻炼出了较强的学习能力，独立解决工程问题的能力和较强的团队合作能力。
   -
-   p: 具备抗压能力、且有一定自学能力，能够熟练阅读使用中文API，英文API可以大概看懂并运用；
-
+   p: 我曾经从事的建筑设计师的职业背景给我良好的设计感，也锻炼了我对大型项目的整体统筹能力，
 
 contact: # 联系方式
   -
     icon: fa-envelope
     name: Email
-    value: shfjasdb@126.com
+    value: xinguanhua@gmail.com
   -
     icon: fa-qq
     name: QQ
-    value: '111'
+    value: '595255966'
   -
     icon: fa-phone-square
     name: 手机
-    value: '111'
+    value: '182 0106 6106'
   -
     icon: fa-weixin
     name: 微信
-    value: 'aaa'
+    value: 'lfszxgh'
 honor: # 奖项荣誉
 tech: # 技能点
   -
@@ -66,23 +64,48 @@ tech: # 技能点
     percentage: 30%
 experience: # 项目经验
   -
-    section: 科技股份有限公司（2018年4月～2018年10月）
-    job: 前端开发
+    section: 北京太极华保科技股份有限公司（2018年4月～2018年11月）
+    job: 前端开发（因公司合并，与"慧信通"为同一技术团队）
     project:
       -
+        name: 语音机器人平台（vue）
+        img:
+        website:
+        source_code:
+        des: !!md |
+          语音机器人平台开发，平台功能有，账号登录验证，不同的管理权限生成不同页面，外呼数据可视化，外呼流程图设计，外呼任务管理与分配，实时呼叫，websocket对话实时监控，短信外呼等众多功能。
+          本项目开发流程复杂，经过dev本地开发，开发团队测试，用户前期测试及正式版本多个阶段，需要在三台不同的服务器调用上百个api接口，项目有数十张前端页面，以及众多vue组件。最大化的利用了vue以及webpack工程化开发的能力，很好的锻炼了自己的前端技术与对大型项目的整体把握能力。
+        content:
+          -
+            des: !!md
+              1.使用vue+webpack进行前端工程化开发
+          -
+            des: !!md
+              2.项目采用vuex等技术处理组件间通讯，axios处理http请求以及使用element-ui组件库中部分功能进行快速开发。
+          -
+            des: !!md
+              3.使用websoket创建实时监控窗口
+          -
+            des: !!md
+              4.使用go.js开发流程图页面，实现按照不同的流程元素，在流程界面拖拽，连接，标注，并将流程设计信息传递到后台。使用Echart.js进行数据化可视页面的开发
+          -
+            des: !!md
+              5.使用cookie,sessionstorage,localstorage存储token及其他信息
+
+      -
         name: 外呼平台（vue）
         img:
         website:
         source_code:
         des: !!md |
-          雷锋网是深圳英鹏信息技术有限公司于2011年创办，从起始的科技博客，逐步发展成一个科技信息与产品服务平台。雷功能
+          把联通电信移动三家运营商及其他外呼接口的外呼项目，在搭建的外呼平台上进行项目的统一管理和外呼业务操作，实现了登录，按照不同权限生成页面，搜索筛选，按照请求结果生成表单，页面内呼叫，呼叫状态轮询等功能
         content:
           -
             des: !!md
-              1.使用html、css完成网页布局；
+              1.使用vue-cli+webpack打包
           -
             des: !!md
-              2.进一步使用H5和CSS3进行页面效果优化；
+              2.项目采用vuex等技术处理各组件间的通讯，axios处理请求以及使用element-ui组件库中部分功能进行快速开发，vue-router处理页面导航及根据用户权限渲染侧边菜单栏等
           -
             des: !!md
               3.部分外呼接口，需要在vue中调用入外部js中的方法
@@ -90,60 +113,77 @@ experience: # 项目经验
             des: !!md
               4.使用promise( )优化接口调用逻辑
 
-
       -
-        name: 外呼平台（微信小程序 | 内部研发项目）
+        name: 智能语音机器人（微信小程序）
         img:
         website:
         source_code:
         des: !!md |
-          雷锋网是深圳英鹏信息技术有限公司于2011年创办，从起始的科技博客，逐步发展成一个科技信息与产品服务平台。雷功能
-      -
-        name: 外呼平台（vue）
-        img:
-        website:
-        source_code:
-        des: !!md |
-          雷锋网是深圳英鹏信息技术有限公司于2011年创办，从起始的科技博客，逐步发展成一个科技信息与产品服务平台。雷功能
+          模仿手机拨号键盘，可以在小程序中呼叫智能语音机器人
         content:
           -
             des: !!md
-              1.使用html、css完成网页布局；
+              1.开发小程序弹窗组件，取代原生组件，可以弹窗中添加自定义表单内容。
           -
             des: !!md
-              2.进一步使用H5和CSS3进行页面效果优化；
+              2.调用微信相关接口，可以生成带参数二维码
+      -
+        name: 智能语音播放器（微信小程序 | 内部研发项目）
+        img:
+        website:
+        source_code:
+        des: !!md |
+          开发自定义的音频播放器，用来播放文本识别的语音文件。实现了播放，音量，搜索歌词及歌词滚动在内的音频播放器的基本功能。
+      -
+        name: 流程图（ vue + jsplumb | 内部研发项目）
+        img:
+        website:
+        source_code:
+        des: !!md |
+          采用jsplumb的相关api在浏览器中生成流程图表，实现流程图的拖拽，参数化连接等功能，掌握了在vue-webpack项目中引入外部js插件的的处理方法，锻炼了对于新的js插件库的学习能力。
+        content:
           -
             des: !!md
-              3.部分外呼接口，需要在vue中调用入外部js中的方法
+              1.vue-cli+webpack打包，并在vue中引入jquery，来操作jsplumb生成的拖拽图的dom元素
           -
             des: !!md
-              4.使用promise( )优化接口调用逻辑
+              2.采用canvas绘制侧边元素栏，通过在vue中引入jquery-ui中的draggable插件，从左侧元素栏复制并拖拽canvas元素到右侧流程图区域
+          -
+            des: !!md
+              3.使用jsplumb的相关api，对流程图实现精细化控制，包括元素拖拽，连接，元素的样式等内容
+
   -
     section: 慧信通（北京）网络技术有限公司（2017年11月～2018年3月）
     job: 前端开发
     project:
           -
-            name: 外呼平台（vue）
+            name: “零元购”移动端（vue + 小程序版本）
             img:
             website:
             source_code:
             des: !!md |
-              雷锋网是深圳英鹏信息技术有限公司于2011年创办，从起始的科技博客，逐步发展成一个科技信息与产品服务平台。雷功能
+              在移动端运行的运营商套餐+手机项目。用于运营商的营业员向客户销售手机，话费套餐及营业员进行客户的身份认证及业务管理
             content:
               -
                 des: !!md
-                  1.使用html、css完成网页布局；
+                  1.使用vue框架，以及vue-router构建单页面应用。使用vue前端框架
               -
                 des: !!md
-                  2.进一步使用H5和CSS3进行页面效果优化；
+                  2.项目采用vuex处理各组件间的通讯，vue-resource处理请求，使用weui组件库中部分功能进行快速开发
               -
                 des: !!md
-                  3.部分外呼接口，需要在vue中调用入外部js中的方法
+                  3.使用canvas对上传验证图片进行压缩整理
               -
                 des: !!md
-                  4.使用promise( )优化接口调用逻辑
+                  4.小程序版本同vue版本的功能及样式完全相同，只是全面采用小程序的api。
 
+  -
+    section: 自学前端（2014年4月～2017年10月）
+    job: 前端开发
 
+  -
+    section: 北京中筑天和建筑设计有限公司（2014年7月～2017年3月）
+    job: 建筑设计师
 
 skill: # 技能清单
       -
@@ -154,25 +194,217 @@ skill: # 技能清单
           精通vue.js框架，对vue全家桶，包括vue-router/vuex/axios等，都有一定的理解和实际使用。可以通过vue-cli独立开发web单页面应用
       -
         des: !!md |
-          精通微信小程序开发，熟练掌握小程序的api接口
+          熟悉微信小程序开发，熟练掌握小程序的api接口
       -
         des: !!md |
-          掌握ES6常用语法，在项目开发中，使用如promise()等，精简优化代码，提高开发效率
+          掌握ES6常用语法，在项目开发中实际应用ES6，精简优化代码，提高开发效率
       -
         des: !!md |
           熟练掌握掌握jQuery与DOM操作及事件处理
       -
         des: !!md |
-          熟悉AJAX/JSON、对JS面向对象，闭包，跨域请求等有一定理解。
+          熟悉AJAX/JSON、对http协议，JS面向对象，闭包，跨域请求等有一定理解。
       -
         des: !!md |
           掌握Git，webpack，babel等编译工具
       -
         des: !!md |
-          了解node.js及Django，能够编写Django后端templates管理页面，提高前后端协作效率
+          了解node.js，能够编写基本的node后端服务器，在等待后端开发的过程中完成前端接口开发，提高前后端协作效率
       -
         des: !!md |
-          熟练掌握photoshop等绘图软件，可以帮助团队完成初级ui的设计绘图工作
-
-
+          了解python基本语法，了解Django的基本架构，能够编写Django后端templates管理页面
+      -
+        des: !!md |
+          了解linux常用指令，了解nginx作为反向代理服务器的基本操作。
+      -
+        des: !!md |
+          熟练掌握photoshop等绘图软件，可以帮助团队完成初级ui的设计绘图工作，也能提高同ui设计师的协作效率。
 ---
+
+
+
+
+
+
+
+
+#---
+#update_time: '2017.08.06'
+#name: 小明
+#nickname:
+#meta_content:
+#keywords: sinf,前端,工作,简历
+#age: 27岁
+#gender: 男
+#school: 大学
+#profession: 城市规划
+#hope_salary: 15k-20k
+#hope_city: 北京
+#work_status: 全职
+#to_work_time: 未离职,会尽快入职
+##english_level: CET-6
+#blog:
+#github:
+#website:
+#online:
+#print:
+#title: 小 明 - 前 端 工 程 师
+#apply_to_position: 前端工程师
+#description:
+#  -
+#   p: 我有较强的学习能力，独立解决工程问题的能力和较强的团队合作能力。
+#  -
+#   p: 具备抗压能力、且有一定自学能力，能够熟练阅读使用中文API，英文API可以大概看懂并运用；
+#
+#
+#contact: # 联系方式
+#  -
+#    icon: fa-envelope
+#    name: Email
+#    value: shfjasdb@126.com
+#  -
+#    icon: fa-qq
+#    name: QQ
+#    value: '111'
+#  -
+#    icon: fa-phone-square
+##    name: 手机
+#    value: '111'
+#  -
+#    icon: fa-weixin
+#    name: 微信
+#    value: 'aaa'
+#honor: # 奖项荣誉
+#tech: # 技能点
+#  -
+#    name: HTML/CSS
+#    percentage: 80%
+#  -
+#    name: JavaScript
+#    percentage: 80%
+#  -
+#    name: vue
+#    percentage: 80%
+#  -
+#    name: 微信小程序
+#    percentage: 70%
+#  -
+#    name: Git
+#    percentage: 50%
+#  -
+#    name: Node.js
+#    percentage: 30%
+#experience: # 项目经验
+#  -
+#    section: 科技股份有限公司（2018年4月～2018年10月）
+#    job: 前端开发
+#    project:
+#      -
+#        name: 外呼平台（vue）
+#        img:
+#        website:
+#        source_code:
+#        des: !!md |
+#          雷锋网是深圳英鹏信息技术有限公司于2011年创办，从起始的科技博客，逐步发展成一个科技信息与产品服务平台。雷功能
+#        content:
+#          -
+#            des: !!md
+#              1.使用html、css完成网页布局；
+#          -
+#            des: !!md
+#              2.进一步使用H5和CSS3进行页面效果优化；
+#          -
+#            des: !!md
+#              3.部分外呼接口，需要在vue中调用入外部js中的方法
+#          -
+#            des: !!md
+#              4.使用promise( )优化接口调用逻辑
+#
+#
+#      -
+#        name: 外呼平台（微信小程序 | 内部研发项目）
+#        img:
+#        website:
+#        source_code:
+#        des: !!md |
+#          雷锋网是深圳英鹏信息技术有限公司于2011年创办，从起始的科技博客，逐步发展成一个科技信息与产品服务平台。雷功能
+#      -
+#        name: 外呼平台（vue）
+#        img:
+#        website:
+#        source_code:
+#        des: !!md |
+#          雷锋网是深圳英鹏信息技术有限公司于2011年创办，从起始的科技博客，逐步发展成一个科技信息与产品服务平台。雷功能
+#        content:
+#          -
+#            des: !!md
+#              1.使用html、css完成网页布局；
+#          -
+#            des: !!md
+#              2.进一步使用H5和CSS3进行页面效果优化；
+#          -
+#            des: !!md
+#              3.部分外呼接口，需要在vue中调用入外部js中的方法
+#          -
+#            des: !!md
+#              4.使用promise( )优化接口调用逻辑
+#  -
+#    section: 慧信通（北京）网络技术有限公司（2017年11月～2018年3月）
+#    job: 前端开发
+#    project:
+#          -
+#            name: 外呼平台（vue）
+#            img:
+#            website:
+#            source_code:
+#            des: !!md |
+#              雷锋网是深圳英鹏信息技术有限公司于2011年创办，从起始的科技博客，逐步发展成一个科技信息与产品服务平台。雷功能
+#            content:
+#              -
+#                des: !!md
+#                  1.使用html、css完成网页布局；
+#              -
+#                des: !!md
+#                  2.进一步使用H5和CSS3进行页面效果优化；
+#              -
+#                des: !!md
+#                  3.部分外呼接口，需要在vue中调用入外部js中的方法
+#              -
+#                des: !!md
+#                  4.使用promise( )优化接口调用逻辑
+#
+#
+#
+#skill: # 技能清单
+#      -
+#        des: !!md |
+#          能够用 HTML + CSS 编写语义化的代码，熟练掌握盒模型，flex布局等css布局方案，熟练掌握html5和css3常用属性，熟练掌握boostrap，element-ui，weui等ui框架
+#      -
+#        des: !!md |
+#          精通vue.js框架，对vue全家桶，包括vue-router/vuex/axios等，都有一定的理解和实际使用。可以通过vue-cli独立开发web单页面应用
+#      -
+#        des: !!md |
+#          精通微信小程序开发，熟练掌握小程序的api接口
+#      -
+#        des: !!md |
+#          掌握ES6常用语法，在项目开发中，使用如promise()等，精简优化代码，提高开发效率
+#      -
+#        des: !!md |
+#          熟练掌握掌握jQuery与DOM操作及事件处理
+#      -
+#        des: !!md |
+#          熟悉AJAX/JSON、对JS面向对象，闭包，跨域请求等有一定理解。
+#      -
+#        des: !!md |
+#          掌握Git，webpack，babel等编译工具
+#      -
+#        des: !!md |
+#          了解node.js及Django，能够编写Django后端templates管理页面，提高前后端协作效率
+#      -
+#        des: !!md |
+#          熟练掌握photoshop等绘图软件，可以帮助团队完成初级ui的设计绘图工作
+#
+#
+#---
+
+
